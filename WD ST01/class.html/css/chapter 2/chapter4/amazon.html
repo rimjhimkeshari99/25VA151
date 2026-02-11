@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+*,html{
+    margin: 0;
+    padding:0;
+    box-sizing:border-box;
+}
+nav{
+    background-color: black;
+    width: 100%;
+    height: 80px;
+}
+nav ul{
+    float: inline-end;
+    list-style-type: none;
+    margin:10px 20px 0 0;
+}
+nav ul li{
+    display: inline-block;
+    margin: auto;
+    padding: 0 20px;
+}
+nav ul li a{
+    text-decoration: none;
+    color:white;
+    font-size: 20px;
+}
+.image img{
+    width: auto;
+    height: 45px;
+    align-items: center;
+    display: inline-start;
+
+}
+.search input{
+    width: 500px;
+    height:30px;
+    border-radius: 5px;
+}
+.search button{
+    width: 100px;
+    height: 30px;
+    border-radius: 5px;
+    background-color: orange;
+}
+container{
+    display:grid;
+    grid-template-rows: repeat();
+    margin-top: 20px;
+    gap:20px;
+    background-color: lightyellow;
+    width: 100%;
+    height: 1200px;
+}
+.box{
+    background-color: lightgoldenrodyellow;
+    width: 300px;
+    height: 500px;
+    align-self:flex-start;
+}
+
+    </style>
+</head>
+<body>
+<nav>
+  <div class="image">
+        <img src="https://tse2.mm.bing.net/th/id/OIP.cs6rsE5Ogsa4Hm_2Y6hiPwHaEK?cb=ucfimg2&pid=ImgDet&ucfimg=1&w=474&h=266&rs=1&o=7&rm=3" alt="image">
+        </div>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Login</a></li>
+        </ul>
+      <center>  <div class="search">
+            <input type="text" placeholder="search here">
+            <button>search</button>
+        </div></center>
+</nav>
+<container>
+<div class="box">
+    <div class="img1" >
+    <img src="https://images.pexels.com/photos/159463/headphones-instagram-video-games-razer-159463.jpeg?cs=srgb&dl=black-and-white-close-up-hanging-159463.jpg&fm=jpg" style="height: auto;width: 150px;">
+</div>
+<h2 style="color=black">RAZER KRAKEN X HEADPHONES</h2>
+<p style="color=black">Experience crystal-clear audio with our premium headphones. Perfect for gaming, music, and calls.</p>
+</div>
+    <div class="box"></div>
+     <div class="box"></div>
+      <div class="box"></div>
+       <div class="box"></div>
+        <div class="box"></div>
+</container>
+    
+</body>
+</html>

@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Amazon Clone</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:#eaeaea;
+}
+
+/* ===== HEADER ===== */
+header{
+    background:#131921;
+    color:white;
+    padding:10px 20px;
+    display:flex;
+    align-items:center;
+    gap:20px;
+}
+
+.logo{
+    color:#ff9900;
+    font-size:26px;
+    font-weight:bold;
+}
+
+.search{
+    flex:1;
+    display:flex;
+}
+
+.search input{
+    width:100%;
+    padding:8px;
+    border:none;
+}
+
+.search button{
+    padding:8px 12px;
+    border:none;
+    background:#ff9900;
+    cursor:pointer;
+}
+
+.search button:hover{
+    background:#f3a847;
+}
+
+/* ===== MENU ===== */
+nav{
+    background:#232f3e;
+    padding:10px 20px;
+}
+
+nav a{
+    color:white;
+    margin-right:18px;
+    text-decoration:none;
+    font-size:14px;
+}
+
+nav a:hover{
+    text-decoration:underline;
+}
+
+/* ===== PRODUCTS ===== */
+.products{
+    display:flex;
+    flex-wrap:wrap;
+    padding:20px;
+    justify-content:center;
+}
+
+.card{
+    background:white;
+    width:220px;
+    margin:12px;
+    padding:12px;
+    text-align:center;
+    border-radius:5px;
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:scale(1.05);
+}
+
+.card img{
+    width:100%;
+    height:150px;
+    object-fit:auto;
+}
+
+.card h3{
+    font-size:15px;
+    margin:10px 0;
+}
+
+.price{
+    color:#0f1111;
+    font-weight:bold;
+}
+
+.card button{
+    margin-top:10px;
+    width:100%;
+    padding:8px;
+    border:none;
+    background:#ffd814;
+    cursor:pointer;
+    border-radius:4px;
+}
+
+.card button:hover{
+    background:#f7ca00;
+}
+
+/* ===== FOOTER ===== */
+footer{
+    background:#131921;
+    color:white;
+    text-align:center;
+    padding:15px;
+    font-size:13px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">amazon</div>
+
+    <div class="search">
+        <input type="text" placeholder="Search Amazon">
+        <button>Search</button>
+    </div>
+
+    <div>Sign In</div>
+</header>
+
+<nav>
+    <a href="#">All</a>
+    <a href="#">Mobiles</a>
+    <a href="#">Fashion</a>
+    <a href="#">Electronics</a>
+    <a href="#">Home</a>
+    <a href="#">Books</a>
+</nav>
+
+<div class="products">
+
+    <!-- ITEM 1 -->
+    <div class="card">
+        <img src="https://tse2.mm.bing.net/th/id/OIP.0H_GXDBmj8t95s1KzMU5GAHaL5?pid=Api&P=0&h=180">
+        <h3>Smartphone</h3>
+        <p class="price">₹12,999</p>
+        <button>Add to Cart</button>
+    </div>
+
+    <!-- ITEM 2 -->
+    <div class="card">
+        <img src="https://images.pexels.com/photos/610945/pexels-photo-610945.jpeg?cs=srgb&dl=pexels-garrettmorrow-610945.jpg&fm=jpg">
+        <h3>Wireless Headphones</h3>
+        <p class="price">₹1,999</p>
+        <button>Add to Cart</button>
+    </div>
+
+    <!-- ITEM 3 -->
+    <div class="card">
+        <img src="https://tse4.mm.bing.net/th/id/OIP.rRAN-_-LES4FI3GEOsBj2AHaHa?pid=Api&P=0&h=180">
+        <h3>Smart Watch</h3>
+        <p class="price">₹2,499</p>
+        <button>Add to Cart</button>
+    </div>
+
+    <!-- ITEM 4 -->
+    <div class="card">
+        <img src="https://m.media-amazon.com/images/I/714XEmVgt1L._AC_SL1500_.jpg">
+        <h3>Laptop Backpack</h3>
+        <p class="price">₹899</p>
+        <button>Add to Cart</button>
+    </div>
+
+    <!-- ITEM 5 -->
+    <div class="card">
+        <img src="https://m.media-amazon.com/images/I/81KehT0f84L.jpg">
+        <h3>Bluetooth Speaker</h3>
+        <p class="price">₹1,499</p>
+        <button>Add to Cart</button>
+    </div>
+
+    <!-- ITEM 6 -->
+    <div class="card">
+        <img src="https://img.freepik.com/premium-photo/pair-blue-running-shoes-isolated-white-background_960079-251.jpg?w=2000">
+        <h3>Running Shoes</h3>
+        <p class="price">₹2,199</p>
+        <button>Add to Cart</button>
+    </div>
+
+    <!-- ITEM 7 -->
+    <div class="card">
+        <img src="https://handcmediastorage.blob.core.windows.net/productimages/TH/THPZA001-A01-170421-1400px-1820px.jpg">
+        <h3>Cotton T-Shirt</h3>
+        <p class="price">₹499</p>
+        <button>Add to Cart</button>
+    </div>
+
+    <!-- ITEM 8 -->
+    <div class="card">
+        <img src="https://ii1.pepperfry.com/media/catalog/product/b/l/800x880/black-iron-study-lamp-by-new-era-black-iron-study-lamp-by-new-era-fjxbhk.jpg">
+        <h3>Study Table Lamp</h3>
+        <p class="price">₹799</p>
+        <button>Add to Cart</button>
+    </div>
+
+    <!-- ITEM 9 -->
+    <div class="card">
+        <img src="https://m.media-amazon.com/images/I/71xlG-c40OL._AC_SL1500_.jpg">
+        <h3>Cookware Set</h3>
+        <p class="price">₹3,299</p>
+        <button>Add to Cart</button>
+    </div>
+
+    <!-- ITEM 10 -->
+    <div class="card">
+        <img src="https://5.imimg.com/data5/SELLER/Default/2023/7/329476313/WQ/KL/HE/189586772/class-6-9-books-combo-png-1000x1000.png">
+        <h3>Book Combo Pack</h3>
+        <p class="price">₹699</p>
+        <button>Add to Cart</button>
+    </div>
+
+</div>
+
+<footer>
+© 2025 Amazon Clone — Educational Project
+</footer>
+
+</body>
+</html>
