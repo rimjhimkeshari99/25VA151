@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid website</title>
+    <style>
+        body{
+            margin:0;
+            padding:0;
+            font-family:san-serif;
+            box-sizing:border-box;
+        }
+  nav{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  background-color: black;
+  height:80px;
+  padding:0 20px;
+  color:white;
+  width:100%;
+  }
+  nav img{
+    width: 50px;
+    height: 30px;
+  }
+  nav ul{
+    display:flex;
+    list-style:none;
+    flex-direction: row;
+  }
+  nav ul li{
+    margin:0 15px;
+    border-right:1px solid white;
+    padding-right: 15px;
+    align-self: flex-end;
+  }
+  nav ul li:last-child{
+    border-right: none;
+    padding-right: none;
+  }
+  nav ul li a{
+    color:white;
+    text-decoration: none;
+  }
+  nav ul li a:hover{
+    color:orange;
+    
+  }
+  nav input{
+    padding:5px;
+    width: 150px;
+    height:30px;
+  }
+  nav input text{
+    text-align: center;
+    color: chocolate;
+  }
+  .container{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:20px;
+    padding:40px;
+  }
+  .main{
+    border:1px solid black;
+    padding:15px;
+    text-align:center;
+    border-radius:8px;
+    transition:0.3s;
+  }
+  .main:hover{
+    transform: scale(1.05);
+    box-shadow:0 4px 15px rgba(0,0,0,0.2);
+  }
+  .main img{
+width: 200px;
+height: 200px;
+object-fit:cover;
+
+border:2px solid black;
+  }
+  .main h3{
+    text-decoration: underline;
+  }
+  .main p{
+    color:black;
+    font-size:14px;
+  }
+  .main span{
+    font-weight: 300px;
+    color:black;
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+.main input{
+    background-color: black;
+    color:white;
+    gap:20px;
+}
+.main input:hover{
+    transform: scale(1.05);
+    box-shadow: 0 9px 9px 9px rgba(0,0,0,0.2);
+    background-color: orange;
+    color:white;
+}
+
+}
+.footer{
+    background-color: black;
+    color:white;
+    width: 100%;
+    padding: 10px;
+    height: 30px;
+}
+@media(max-width:600px){
+    .main{
+    height: 400px;
+    }
+    .main img{
+    height: 150px;
+    }
+    .main h3{
+        font-size:20px;
+        color: brown;
+    }
+    .main p{
+        font-size:17px;
+        color:blue;
+    }
+}
+    </style>
+</head>
+<body>
+
+    <nav>
+        <img src="https://logos-world.net/wp-content/uploads/2020/04/Amazon-Emblem.jpg" alt="logo">
+        <ul>
+            <li><a href="">Home</a></li>
+             <li><a href="">About us</a></li>
+            <li><a href="">Products</a></li>
+            <li><a href="">Cart</a></li>
+             <li><a href="">Contact us</a></li>
+        </ul>
+        <input type="text" placeholder="search here">
+    </nav>
+     <div class="container">
+        <div class="main">
+         <center><img src="https://i.etsystatic.com/11144858/r/il/6f649b/3019705296/il_1588xN.3019705296_cn0t.jpg" alt="shawl"></center>   
+            <h3>Shawl</h3>
+            <p>Beautiful and comfortable shawl for all seasons.</p>
+           <center> <span>$25</span></center>
+          <center>  <input type="button" value="add to cart"></center>
+        </div>
+         <div class="main">
+         <center><img src="https://tse3.mm.bing.net/th/id/OIP.SYBnW270bNxoFniBRKDjDAHaHa?pid=Api&P=0&h=180" alt="shirt">
+            <h3>Men's Shirt</h3></center>   
+            <p>Fully cotton and Wearable.</p>
+           <center> <span>$23</span></center>
+               <center>  <input type="button" value="add to cart"></center>
+        </div>
+         <div class="main">
+           <center> <img src="https://www.channelnews.com.au/wp-content/uploads/2024/01/01.JBL_Live_770NC_Product-Image_Hero_Blue.jpg" alt="headphone"></center>
+            <h3>Boat headphones</h3>
+            <p>Enjoy distraction free music.</p>
+             <center> <span>$300</span></center>
+               <center>  <input type="button" value="add to cart"></center>
+        </div>
+         <div class="main">
+         <center>   <img src="https://tse4.mm.bing.net/th/id/OIP.Dx0Wna_XpyU6PII3cRAAMgHaJc?pid=Api&P=0&h=180" alt="shades"></center>
+            <h3>Black Men's Shades</h3>
+            <p>See the world in beautiful Colours with protection.</p>
+          <center>  <span>$5.00</span></center>
+               <center>  <input type="button" value="add to cart"></center>
+        </div>
+         <div class="main">
+          <center>  <img src="https://i.pinimg.com/originals/06/a7/f3/06a7f39c7bda0e2cd1b940d205c67766.jpg" alt="skirt"></center>
+            <h3>Women's Floral Skirt</h3>
+            <p>Live your life by feeling beautiful.</p>
+          <center>  <span>$15.98</span></center>
+               <center>  <input type="button" value="add to cart"></center>
+        </div>
+         <div class="main">
+        <center>    <img src="https://obsessioncosmetics.com/wp-content/uploads/2024/11/51zYqsEPSHL._SL1500_.jpg" alt="face wash"></center>
+            <h3>Dot&Key Hydrating Face Wash</h3>
+            <p>Gives 24 hours Hydration with glow and helps to remove acne marks.</p>
+           <center> <span>$12.78</span></center>
+               <center>  <input type="button" value="add to cart"></center>
+        </div>
+    </div>
+  <center>  <div class="footer">&copy 2025 shopping website</div></center>
+</body>
+</html>
